@@ -7,3 +7,8 @@ __pycache__/
 *.pyx
 *.so
 .DS_Store
+.DS_Store
+
+# Excel
+*.xlsx
+*.xlsm
