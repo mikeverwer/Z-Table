@@ -45,7 +45,8 @@ def create_excel_file():
     ws['D2'] = "Probability"
     ws['E1'] = -1.1
     ws['E1'].style = "input_style"
-    ws['E2'] = '=XLOOKUP(E1,A:A,B:B)'
+    ws['E2'] = '=_xlfn.XLOOKUP(E1,A:A,B:B)' 
+    # ws['E2'].data_type = 'f'
     ws['E2'].style = "output_style"
     
     # Save
