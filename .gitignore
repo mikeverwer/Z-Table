@@ -1,0 +1,9 @@
+# Python
+excel_env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyx
+*.so
+.DS_Store
