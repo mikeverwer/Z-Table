@@ -237,20 +237,7 @@ def create_excel_file():
     
     # Save
     wb.save("z_table.xlsx")
-    print("Successfully created z_table.xlsx")
-    print("\nTo add the 'keep selected' functionality:")
-    print("1. Open z_table.xlsx and press Alt+F11")
-    print("2. Paste this code into Sheet1:")
-    print("""
-Private Sub Worksheet_Change(ByVal Target As Range)
-    If Not Intersect(Target, Range("E1")) Is Nothing Then
-        Application.EnableEvents = False
-        Range("E1").Select
-        Application.EnableEvents = True
-    End If
-End Sub
-""")
-    print("3. Save as z_table.xlsm (macro-enabled workbook)")
+    print("\nSuccessfully created z_table.xlsx\n")
 
 if __name__ == "__main__":
     create_excel_file()
